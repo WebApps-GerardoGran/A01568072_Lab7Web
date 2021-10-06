@@ -54,14 +54,14 @@ const ProductPreview: React.FC<ProductPreviewProps> = (props) => {
                 <Grid item lg={10} container>
                     <Grid item lg={12}>
                         <Typography className="productName" variant="h1">
-                            <Link to={`/pdp?productId=${props.product.id}`}>
+                            <Link className="productLink" to={`/pdp?productId=${props.product.id}`}>
                                 {props.product.name}
                             </Link>
                         </Typography>
                     </Grid>
                     <Grid item lg={12}>
                         <Typography className="description">
-                            <Link to={`/pdp?productId=${props.product.id}`}>
+                            <Link className="productLink" to={`/pdp?productId=${props.product.id}`}>
                                 {props.product.description}
                             </Link>
                         </Typography>
