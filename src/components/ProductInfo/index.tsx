@@ -1,5 +1,6 @@
 import "./index.css";
 import Product from "../../types/Product";
+import CommentList from "../CommentList";
 import {
   Grid,
   Paper,
@@ -125,6 +126,11 @@ const ProductInfo: React.FC<ProductInfoProps> = (props) => {
           </Grid>
 
           <Grid item lg={12} />
+
+          <Grid item lg={12}>
+            <CommentList comments={props.product.comments} />
+          </Grid>
+
         </Grid>
       </Grid>
     </div>
